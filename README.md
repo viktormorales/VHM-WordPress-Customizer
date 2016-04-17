@@ -4,12 +4,12 @@ Estoy trabajando en una clase para crear paneles y secciones automáticamente en
 
 ## Instalación
 * Descargar los archivos.
-* Ubicar el archivo *customizer.php* y la carpeta *js/theme-customizer.js* en el ROOT de la plantilla (ej.: wp-content/themes/twentysixteen/);
-* Incluir *customizer.php* en el archivo *functions.php*: require(dirname(__FILE__) . '/customizer.php');
-* Ir a la opción Personalizar *Apariencia > Personalizar*.
+* Ubicar el archivo **customizer.php** y la carpeta **js/theme-customizer.js** en el ROOT de la plantilla (ej.: wp-content/themes/twentysixteen/);
+* Incluir **customizer.php** en el archivo **functions.php**: `require(dirname(\__FILE\__) . '/customizer.php');`
+* Ir a la opción Personalizar **Apariencia > Personalizar**.
 
 ## Opciones personales
-Modifique la variable *self::$panels* para agregar o quitar paneles siguiendo el ejemplo a continuación:
+Para agregar o quitar paneles, abrir el archivo **customizer.php** y modificar la variable `self::$panels` para agregar o quitar paneles siguiendo el ejemplo a continuación:
 
 ```
 // Define paneles con el formato 'ID' => 'NOMBRE'
@@ -28,7 +28,7 @@ Y luego ubique las secciones en la plantilla con el siguiente formato:
 	<div id="ID-template"><?php echo do_shortcode(get_theme_mod('ID_template')); ?></div>
 </section>
 ```
-Debe reemplazar ID por el valor que se haya asignado cuando se defineron los panels, en nuestro ejemplo quedaría:
+**NOTA: Debe reemplazar ID por el valor que se haya asignado cuando se defineron los panels, en nuestro ejemplo quedaría:**
 
 ```
 <section id="about">
