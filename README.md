@@ -2,10 +2,12 @@
 
 Estoy trabajando en una clase para crear paneles y secciones automáticamente en el Personalizador de WordPres.
 
+<img style="width:100%" src="https://github.com/viktormorales/VHM-WordPress-Customizer/blob/master/example.jpg">
+
 ## Instalación
 * Descargar los archivos.
 * Ubicar el archivo **customizer.php** y la carpeta **js/theme-customizer.js** en el ROOT de la plantilla (ej.: wp-content/themes/twentysixteen/);
-* Incluir **customizer.php** en el archivo **functions.php**: `require(dirname(\__FILE\__) . '/customizer.php');`
+* Incluir **customizer.php** en el archivo **functions.php**: `require(dirname(__FILE__) . '/customizer.php');`
 * Ir a la opción Personalizar **Apariencia > Personalizar**.
 
 ## Opciones personales
