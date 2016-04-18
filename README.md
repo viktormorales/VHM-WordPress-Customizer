@@ -11,7 +11,7 @@ Estoy trabajando en una clase para crear paneles y secciones automáticamente en
 * Ir a la opción Personalizar **Apariencia > Personalizar**.
 
 ## Opciones personales
-Para agregar o quitar paneles, abrir el archivo **customizer.php** y modificar la variable `self::$panels` para agregar o quitar paneles siguiendo el ejemplo a continuación:
+Para agregar o quitar paneles, abrir el archivo **customizer.php** y modificar la variable `self::$panels` siguiendo el ejemplo a continuación:
 
 ```
 // Define paneles con el formato 'ID' => 'NOMBRE'
